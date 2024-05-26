@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANNADIGARA BHUVANA SANGATHI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+    
+    <nav>
+        <img src ="image/kbs.png" alt="logo" >
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a  href="index.html"> Home</a></li>
+                <li><a  href="about.html"> About</a></li>
+                <li><a class="active" href="blog.html"> Blog </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png">
+        </div>
+    </nav>
+
+   <!-- read more -->
+
+<section id="blog-container">
+    <div class="blogs blogpost">
+        <div class="post">
+            <img class="post2" src="image/Dn.jpg">
+            <h3>15th year anniversary of our Bhuvana sangathi</h3>
+            <p>The 15th anniversary of Bhuvana Sangathi was a momentous occasion marked by the esteemed presence of our honorable minister, Dhruva Narayan. The event, which celebrated a decade and a half of community service and development, was inaugurated by the minister himself. His attendance underscored the significance of Bhuvana Sangathi’s contributions to the community and its unwavering commitment to fostering social and economic growth.
+
+            <br><br>
+            During his speech, Minister Dhruva Narayan lauded the organization for its tireless efforts in uplifting the underprivileged and promoting sustainable development. He highlighted the numerous initiatives undertaken by Bhuvana Sangathi, including educational programs, health camps, and environmental conservation projects, which have collectively transformed countless lives. The minister’s words were a source of inspiration, reinforcing the organization's mission and encouraging continued dedication to the cause.
+            <br><br>   
+            The anniversary celebration was not just a commemoration of past achievements but also a platform for envisioning the future. Minister Narayan emphasized the importance of collective effort and community participation in driving meaningful change. His address resonated with the attendees, instilling a renewed sense of purpose and determination. As Bhuvana Sangathi steps into its 16th year, the organization remains steadfast in its resolve to build a better, more inclusive society, with the unwavering support of leaders like Dhruva Narayan and the community at large. 
+        </p>
+            <a href="post3.html" class="">Read next</a>
+        </div>
+    </div>
+</section>
+
+
+   
+   <!-- read more -->
+
+
+        <!-- footer -->
+
+       
+        
+<footer>
+    <div class="footer-col">
+        <h3>address</h3>
+        <p>ANANDANAGAR 570022</p>
+        <P>KARNATAKA</P>
+        <P> CONTACT INFO</P>
+    </div>
+
+    <div class="footer-col">
+        <h3>inaugrated by</h3>
+        <p>siddharamaiha CM </p>
+        <P>KARNATAKA</P>
+        
+    </div>
+
+    <div class="footer-col">
+        <h3>technical team</h3>
+        <p>Nishanth S</p>
+        <P>KARNATAKA</P>
+        <P>cntact info</P>
+        
+    </div>
+
+
+    <div class="footer-col">
+        <h3> NewsLetter</h3>
+        <p>subscribe to get our newspaper</p>
+        <div class="subscribe">
+            <input type="text" placeholder="your email address">
+            <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+    </div>
+
+    
+    <div class="Copyright">
+        <p>Copyright @2023 All rights are reserved</p>
+        <div class="pro-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+<i class="fab fa-linkedin-in"></i>
+
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+
+            $('#menu-btn').click(function(){
+                $('nav .navigation ul').addClass('active')
+            });
+
+
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').removeClass('active')
+            });
+
+
+
+            let scrollContainer = document.querySelector(".gallery");
+            let backBtn = document.getElementById("backbtn");
+            let nextBtn = document.getElementById("nextbtn");
+        
+            // Handle wheel event for horizontal scrolling
+            scrollContainer.addEventListener("wheel", (evt) => {
+                evt.preventDefault();
+                scrollContainer.scrollLeft += evt.deltaY;
+                scrollContainer.style.scrollBehavior = "auto";
+            });
+        
+            // Handle next button click for horizontal scrolling
+            nextBtn.addEventListener("click", () => {
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft += 900; // Adjust value as needed
+            });
+        
+            // Handle back button click for horizontal scrolling
+            backBtn.addEventListener("click", () => {
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft -= 900; // Adjust value as needed
+            });
+        </script>
+
+  
+       
+</body>
+</html>

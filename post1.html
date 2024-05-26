@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANNADIGARA BHUVANA SANGATHI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+    
+    <nav>
+        <img src ="image/kbs.png" alt="logo" >
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a  href="index.html"> Home</a></li>
+                <li><a  href="about.html"> About</a></li>
+                <li><a class="active" href="blog.html"> Blog </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png">
+        </div>
+    </nav>
+
+   <!-- read more -->
+
+<section id="blog-container">
+    <div class="blogs blogpost">
+        <div class="post">
+            <img class="post1" src="image/certificate.jpg">
+            <h3>Global award for excellence in journalism</h3>
+            <p>Somaiha Maleyur's recent reception of a prestigious global award for excellence in journalism marks a significant milestone not only in his career but also in the annals of contemporary journalism. This distinguished honor serves as a testament to his unwavering commitment to upholding the highest standards of journalistic integrity and his relentless pursuit of truth in an era marked by misinformation and disinformation. With an illustrious career spanning decades, Somaiha's groundbreaking investigative reports, incisive analysis, and thought-provoking editorials have consistently pushed the boundaries of traditional journalism, shedding light on critical issues and holding those in power accountable.
+
+            <br><br>
+            In receiving this global accolade, Somaiha not only reaffirms his status as a preeminent figure in the world of journalism but also underscores the enduring importance of a free and independent press in safeguarding democracy and promoting transparency. His work serves as a beacon of hope in an increasingly complex and interconnected world, reminding us of the transformative power of storytelling to bridge divides, foster empathy, and inspire positive change. As we celebrate Somaiha's achievements, let us also rededicate ourselves to the principles of truth, integrity, and accountability that lie at the heart of journalism's noble calling.
+            </p>
+            <a href="post2.html" class="">Read next</a>
+        </div>
+    </div>
+</section>
+
+
+   
+   <!-- read more -->
+
+
+        <!-- footer -->
+
+       
+        
+<footer>
+    <div class="footer-col">
+        <h3>address</h3>
+        <p>ANANDANAGAR 570022</p>
+        <P>KARNATAKA</P>
+        <P> CONTACT INFO</P>
+    </div>
+
+    <div class="footer-col">
+        <h3>inaugrated by</h3>
+        <p>siddharamaiha CM </p>
+        <P>KARNATAKA</P>
+        
+    </div>
+
+    <div class="footer-col">
+        <h3>technical team</h3>
+        <p>Nishanth S</p>
+        <P>KARNATAKA</P>
+        <P>cntact info</P>
+        
+    </div>
+
+
+    <div class="footer-col">
+        <h3> NewsLetter</h3>
+        <p>subscribe to get our newspaper</p>
+        <div class="subscribe">
+            <input type="text" placeholder="your email address">
+            <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+    </div>
+
+    
+    <div class="Copyright">
+        <p>Copyright @2023 All rights are reserved</p>
+        <div class="pro-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+<i class="fab fa-linkedin-in"></i>
+
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+
+            $('#menu-btn').click(function(){
+                $('nav .navigation ul').addClass('active')
+            });
+
+
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').removeClass('active')
+            });
+
+
+
+            let scrollContainer = document.querySelector(".gallery");
+            let backBtn = document.getElementById("backbtn");
+            let nextBtn = document.getElementById("nextbtn");
+        
+            // Handle wheel event for horizontal scrolling
+            scrollContainer.addEventListener("wheel", (evt) => {
+                evt.preventDefault();
+                scrollContainer.scrollLeft += evt.deltaY;
+                scrollContainer.style.scrollBehavior = "auto";
+            });
+        
+            // Handle next button click for horizontal scrolling
+            nextBtn.addEventListener("click", () => {
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft += 900; // Adjust value as needed
+            });
+        
+            // Handle back button click for horizontal scrolling
+            backBtn.addEventListener("click", () => {
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft -= 900; // Adjust value as needed
+            });
+        </script>
+
+  
+       
+</body>
+</html>

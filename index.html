@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANNADIGARA BHUVANA SANGATHI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+    
+    <nav>
+        <img src ="image/kbs.png" alt="logo" >
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a class="active" href="#"> Home</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="blog.html"> Blog </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png">
+        </div>
+    </nav>
+
+    <!-- home -->
+    <section id="home">
+        <h2> KANNADIGARA BHUVANA SANGATHI</h2>
+        <P> 
+            Kannadigara Bhuvana Sangathi is a prominent monthly newspaper founded and edited by Somaiha Maleyur. 
+            It serves as a crucial platform for discussions and insights into politics and other pertinent issues affecting the community. 
+    ,      Under the astute leadership of Maleyur, the newspaper has carved a niche for itself, delivering in-depth analysis, comprehensive reports, and thought-provoking editorials that resonate with its readership. T</P>
+    <div class="btn">
+        <a class="blue" href="about.html"> About us</a>
+    </div>  
+        </section>
+
+        <!-- galleries -->
+
+        <section id="galleries">
+<div class="gal">
+    <h2> OUR GALLERY</h2>
+    <P>""Our Gallery: A Collection of Captured Dreams. Explore Our World Through Our Lens. Each Image Tells a Story."</P>
+</div>
+        <div class="gallery-wrap">
+            <img src="image/bck.png" id="backbtn">
+            <div class="gallery">
+                <div>
+                <span> <img src="image/medal.jpg" alt="medal"></span>
+                <span> <img src="image/punjab.jpg" alt="medal"></span>
+                <span> <img src="image/win.jpg" alt="medal"></span>
+    
+            </div>
+            <div>
+                <span> <img src="image/eye.jpg" alt="medal"></span>
+                <span> <img src="image/mike.jpg" alt="medal"></span>
+                <span> <img src="image/background.jpg" alt="medal"></span>
+    
+            </div>
+           
+        </div>
+        
+      
+        <img src="image/nxt.png" id="nextbtn">
+        </div>
+    </section>
+        
+<footer>
+    <div class="footer-col">
+        <h3>address</h3>
+        <p>ANANDANAGAR 570022</p>
+        <P>KARNATAKA</P>
+        <P> CONTACT INFO</P>
+    </div>
+
+    <div class="footer-col">
+        <h3>inaugrated by</h3>
+        <p>siddharamaiha CM </p>
+        <P>KARNATAKA</P>
+        
+    </div>
+
+    <div class="footer-col">
+        <h3>technical team</h3>
+        <p>Nishanth S</p>
+        <P>KARNATAKA</P>
+        <P>cntact info</P>
+        
+    </div>
+
+
+    <div class="footer-col">
+        <h3> NewsLetter</h3>
+        <p>subscribe to get our newspaper</p>
+        <div class="subscribe">
+            <input type="text" placeholder="your email address">
+            <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+    </div>
+
+    
+    <div class="Copyright">
+        <p>Copyright @2023 All rights are reserved</p>
+        <div class="pro-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+<i class="fab fa-linkedin-in"></i>
+
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+
+            $('#menu-btn').click(function(){
+                $('nav .navigation ul').addClass('active')
+            });
+
+
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').removeClass('active')
+            });
+
+
+
+            let scrollContainer = document.querySelector(".gallery");
+            let backBtn = document.getElementById("backbtn");
+            let nextBtn = document.getElementById("nextbtn");
+        
+            // Handle wheel event for horizontal scrolling
+            scrollContainer.addEventListener("wheel", (evt) => {
+                evt.preventDefault();
+                scrollContainer.scrollLeft += evt.deltaY;
+                scrollContainer.style.scrollBehavior = "auto";
+            });
+        
+            // Handle next button click for horizontal scrolling
+            nextBtn.addEventListener("click", () => {
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft += 900; // Adjust value as needed
+            });
+        
+            // Handle back button click for horizontal scrolling
+            backBtn.addEventListener("click", () => {
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft -= 900; // Adjust value as needed
+            });
+        </script>
+
+  
+       
+</body>
+</html>

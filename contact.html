@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANNADIGARA BHUVANA SANGATHI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+    
+    <nav>
+        <img src ="image/kbs.png" alt="logo" >
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a  href="index.html"> Home</a></li>
+                <li><a  href="about.html"> About</a></li>
+                <li><a  href="blog.html"> Blog </a></li>
+                <li><a  class="active" href="contact.html"> Contact </a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png">
+        </div>
+    </nav>
+    <section id="contact-home">
+        <h2> Contact US</h2>
+        </section>
+
+        <section id="contact">
+            <div class="getin">
+                <h2>Get In Touch</h2>
+                <p>Need the subscription? want to publish something. fill out the form.</p>
+                <div class="getin-details">
+                    <h3>HeadQuarters</h3>
+                    <div>
+                        <i class="far fa-home get"></i>
+                        <p>ANANDANAGAR Mysore 5700000</p>
+                    </div>
+                    <h3>Phone</h3>
+                    <div>
+                        <i class="far fa-phone-alt get"></i>
+                        <p>contact <br>
+                        contact</p>
+                    </div>
+                    <h3>support</h3>
+                    <div>
+                        <i class="far fa-envelope-open-text get"></i>
+                        <p>email<br> email</p>
+                    </div>
+                </div>
+                <h3>Follow us</h3>
+
+                <div class="pro-links">
+                    <i class="fab fa-facebook-f "></i>
+                    <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+        </div>
+</div>
+            </div>
+
+            <div class="form">
+                <h4>let's connect</h4>
+                <p>for more details conact us personally</p>
+                <div class="form-row">
+                    <input type="text" placeholder="Your name">
+                    <input type="text" placeholder="email">
+                </div>
+                <div class="form-col">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="form-col">
+                    <textarea name="" id="" cols="30" rows="8" placeholder="how can we help?"></textarea>
+                    </div>
+
+                 <div class="form-col">
+                   <button>Send Message</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.3120195355996!2d76.60435092482942!3d12.294761987961857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7ace0434102d%3A0x1e8563f95a283503!2sAnanda%20Nagar%2C%20CFTRI%20layout%2C%20Bogadi%202nd%20Stage%2C%20Niveditha%20Nagar%2C%20Mysuru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1716729102275!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+
+
+        <!-- footer -->
+
+       
+        
+<footer>
+    <div class="footer-col">
+        <h3>address</h3>
+        <p>ANANDANAGAR 570022</p>
+        <P>KARNATAKA</P>
+        <P> CONTACT INFO</P>
+    </div>
+
+    <div class="footer-col">
+        <h3>inaugrated by</h3>
+        <p>siddharamaiha CM </p>
+        <P>KARNATAKA</P>
+        
+    </div>
+
+    <div class="footer-col">
+        <h3>technical team</h3>
+        <p>Nishanth S</p>
+        <P>KARNATAKA</P>
+        <P>cntact info</P>
+        
+    </div>
+
+
+    <div class="footer-col">
+        <h3> NewsLetter</h3>
+        <p>subscribe to get our newspaper</p>
+        <div class="subscribe">
+            <input type="text" placeholder="your email address">
+            <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+    </div>
+
+    
+    <div class="Copyright">
+        <p>Copyright @2023 All rights are reserved</p>
+        <div class="pro-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+<i class="fab fa-linkedin-in"></i>
+
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+
+            $('#menu-btn').click(function(){
+                $('nav .navigation ul').addClass('active')
+            });
+
+
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').removeClass('active')
+            });
+
+
+
+            let scrollContainer = document.querySelector(".gallery");
+            let backBtn = document.getElementById("backbtn");
+            let nextBtn = document.getElementById("nextbtn");
+        
+            // Handle wheel event for horizontal scrolling
+            scrollContainer.addEventListener("wheel", (evt) => {
+                evt.preventDefault();
+                scrollContainer.scrollLeft += evt.deltaY;
+                scrollContainer.style.scrollBehavior = "auto";
+            });
+        
+            // Handle next button click for horizontal scrolling
+            nextBtn.addEventListener("click", () => {
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft += 900; // Adjust value as needed
+            });
+        
+            // Handle back button click for horizontal scrolling
+            backBtn.addEventListener("click", () => {
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft -= 900; // Adjust value as needed
+            });
+        </script>
+
+  
+       
+</body>
+</html>

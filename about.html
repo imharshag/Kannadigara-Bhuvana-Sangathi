@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANNADIGARA BHUVANA SANGATHI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+    
+    <nav>
+        <img src ="image/kbs.png" alt="logo" >
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a  href="index.html"> Home</a></li>
+                <li><a class="active" href="about.html"> About</a></li>
+                <li><a href="blog.html"> Blog </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png">
+        </div>
+    </nav>
+
+    <!-- home -->
+    <section id="about-home">
+        <h2>  KANNADIGARA BHUVANA SANGATHI <br> - SOMAIHA  MALEYUR </h2>
+        
+        
+    </div>  
+        </section>
+
+
+
+<!-- about -->
+
+<section id="about-container">
+    <div class="about-img">
+<img src="image/boards.png">
+    </div>
+    <div class="about-text">
+<h2>KANNADIGARA BHUVANA SANGATHI</h2>
+<p id="one">Bhuvana Sangathi, a renowned political monthly newspaper, has been a cornerstone of political journalism for 25 years. Since [year of establishment], we've remained dedicated to delivering insightful analysis, investigative reports, and thought-provoking editorials on political matters at both local and national levels.</p>
+  <p>At Bhuvana Sangathi, journalistic integrity is paramount. We're committed to upholding the highest standards of accuracy, fairness, and transparency in our reporting. Our mission is to empower our readers with the knowledge they need to engage meaningfully in civic discourse and make informed decisions.</p>
+</div>
+</section>
+
+<section id="about-containers">
+    
+    <div class="about-texts">
+        <h2>SOMAIHA MALEYUR   <BR> <span class="subline">-EDITOR, FOUNDER</span></h2>
+        <p id="one">Somaiha Maleyur, the esteemed editor and founder of Bhuvana Sangathi, hails from the humble village of Maleyur in the Chamarajanagar district. With a deep passion for journalism and a commitment to bringing truth to the forefront, Somaiha has dedicated his life to political reporting. His journey from a small village to the helm of a renowned political monthly newspaper is a testament to his perseverance and vision. Under his leadership, Bhuvana Sangathi has grown into a respected publication, known for its insightful analysis and unwavering dedication to journalistic integrity. Somaiha's roots in Maleyur have instilled in him a profound understanding of grassroots issues, which continues to influence the newspaper's commitment to covering stories that matter to the people.</p>
+    </div>
+    <div class="about-image">
+        <img  src="image/medal.jpg" alt="Somaiha Maleyur">
+    </div>
+</section>
+
+<!-- about -->
+
+
+
+        <!-- footer -->
+
+       
+        
+<footer>
+    <div class="footer-col">
+        <h3>address</h3>
+        <p>ANANDANAGAR 570022</p>
+        <P>KARNATAKA</P>
+        <P> CONTACT INFO</P>
+    </div>
+
+    <div class="footer-col">
+        <h3>inaugrated by</h3>
+        <p>siddharamaiha CM </p>
+        <P>KARNATAKA</P>
+        
+    </div>
+
+    <div class="footer-col">
+        <h3>technical team</h3>
+        <p>Nishanth S</p>
+        <P>KARNATAKA</P>
+        <P>cntact info</P>
+        
+    </div>
+
+
+    <div class="footer-col">
+        <h3> NewsLetter</h3>
+        <p>subscribe to get our newspaper</p>
+        <div class="subscribe">
+            <input type="text" placeholder="your email address">
+            <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+    </div>
+
+    
+    <div class="Copyright">
+        <p>Copyright @2023 All rights are reserved</p>
+        <div class="pro-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+<i class="fab fa-linkedin-in"></i>
+
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+
+            $('#menu-btn').click(function(){
+                $('nav .navigation ul').addClass('active')
+            });
+
+
+            $('#menu-close').click(function(){
+                $('nav .navigation ul').removeClass('active')
+            });
+
+
+
+            let scrollContainer = document.querySelector(".gallery");
+            let backBtn = document.getElementById("backbtn");
+            let nextBtn = document.getElementById("nextbtn");
+        
+            // Handle wheel event for horizontal scrolling
+            scrollContainer.addEventListener("wheel", (evt) => {
+                evt.preventDefault();
+                scrollContainer.scrollLeft += evt.deltaY;
+                scrollContainer.style.scrollBehavior = "auto";
+            });
+        
+            // Handle next button click for horizontal scrolling
+            nextBtn.addEventListener("click", () => {
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft += 900; // Adjust value as needed
+            });
+        
+            // Handle back button click for horizontal scrolling
+            backBtn.addEventListener("click", () => {
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft -= 900; // Adjust value as needed
+            });
+        </script>
+
+  
+       
+</body>
+</html>
