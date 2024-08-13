@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.heading {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: rgb(35, 35, 85);
+    font-weight: bold;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-name, a {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: rgb(35, 35, 85);
+    font-weight: 600;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.gallery-name:hover {
+    color: rgb(10, 10, 60);
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #ffffff;
+    color: rgb(35, 35, 85);
+    padding: 8px 16px;
+    border: 2px solid rgb(35, 35, 85);
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: rgb(35, 35, 85);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2em;
+    }
+
+    .gallery-item {
+        max-width: 200px;
+    }
+
+    .gallery-name {
+        font-size: 1em;
+    }
+
+    .back-button {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1.5em;
+    }
+
+    .gallery-item {
+        max-width: 150px;
+    }
+
+    .gallery-name {
+        font-size: 0.9em;
+    }
+
+    .back-button {
+        font-size: 0.8em;
+        padding: 4px 8px;
+    }
+}
